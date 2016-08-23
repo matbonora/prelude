@@ -9,8 +9,15 @@
  '(flycheck-gcc-language-standard "c++11")
  '(global-linum-mode t)
  '(prelude-theme (quote tango-dark))
+ '(py-autopep8-options (quote ("-a" "-a" "-a" "--max-line-length=120")))
+ '(send-mail-function (quote mailclient-send-it))
  '(user-mail-address "matthias.bonora@cern.ch")
  '(verilog-auto-newline nil)
+ '(verilog-compiler
+   "make -C ~/git/itswp10/firmware/RUv0a/sim/RUv0a_top/run compile")
+ '(verilog-linter
+   "make -C ~/git/itswp10/firmware/RUv0a/sim/RUv0a_top/run compile")
+ '(verilog-simulator "make -C ~/git/itswp10/firmware/RUv0a/sim/RUv0a_top/run")
  '(vhdl-clock-edge-condition (quote function))
  '(vhdl-clock-name "")
  '(vhdl-company-name "CERN / University of Salzburg")
@@ -19,6 +26,27 @@
 -- Copyright (c) <year>
 ")
  '(vhdl-electric-mode t)
+ '(vhdl-file-header
+   "-------------------------------------------------------------------------------
+-- Title      : <title string>
+-- Project    : ITSWP10
+-------------------------------------------------------------------------------
+-- File       : <filename>
+-- Author     : <author>
+-- Company    : <company>
+-- Created    : <date>
+-- Last update: <date>
+-- Platform   : <platform>
+-- Standard   : <standard>
+<projectdesc>-------------------------------------------------------------------------------
+-- Description: <cursor>
+<copyright>-------------------------------------------------------------------------------
+-- Revisions  :
+-- Date        Version  Author  Description
+-- <date>  1.0      <login>	Created
+-------------------------------------------------------------------------------
+
+")
  '(vhdl-platform-spec "CERN OS7, Xilinx Vivado 2015.4")
  '(vhdl-reset-active-high t)
  '(vhdl-reset-kind (quote sync))
@@ -27,7 +55,10 @@
  '(vhdl-upper-case-enum-values t)
  '(vhdl-upper-case-keywords nil)
  '(vhdl-use-direct-instantiation (quote always))
- '(whitespace-line-column 120))
+ '(whitespace-line-column 120)
+ '(whitespace-style
+   (quote
+    (face tabs empty trailing lines-tail space-before-tab::space))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

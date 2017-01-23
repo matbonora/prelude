@@ -19,5 +19,9 @@ session*
 .cask
 tramp
 /var/pcache
+.emacs.desktop
+.emacs.desktop.lock
+
+
 anaconda-mode
 /request/curl-cookie-jar

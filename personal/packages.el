@@ -3,6 +3,7 @@
    solarized-theme
    ein
    elpy
+   company-anaconda
    monokai-theme
    tangotango-theme
    base16-theme

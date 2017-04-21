@@ -11,5 +11,8 @@
    langtool
    define-word
    py-autopep8
+   clang-format
+   cmake-ide
+   cmake-project
    writegood-mode)
 )

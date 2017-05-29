@@ -1,6 +1,9 @@
 (prelude-require-packages
  '(project-explorer
    solarized-theme
+   org-pomodoro
+   org-projectile
+   org-gnome
    ein
    elpy
    company-anaconda
@@ -12,6 +15,7 @@
    define-word
    py-autopep8
    clang-format
+   rtags
    cmake-ide
    cmake-project
    writegood-mode)

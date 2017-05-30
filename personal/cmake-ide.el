@@ -1,20 +1,15 @@
-;; Load rtags and start the cmake-ide-setup process
-(require 'rtags)
+(require 'cpputils-cmake)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Setup cmake-ide
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(require 'cmake-ide)
-(cmake-ide-setup)
-;; Set cmake-ide-flags-c++ to use C++11
-(setq cmake-ide-flags-c++ (append '("-std=c++11")))
-;; We want to be able to compile with a keyboard shortcut
-(global-set-key (kbd "C-c m") 'cmake-ide-compile)
 
-;; Set rtags to enable completions and use the standard keybindings.
-;; A list of the keybindings can be found at:
-;; http://syamajala.github.io/c-ide.html
-(setq rtags-autostart-diagnostics t)
-(rtags-diagnostics)
-(setq rtags-completions-enabled t)
-(rtags-enable-standard-keybindings)
+(add-hook 'c-mode-common-hook
+          (lambda ()
+            (if (derived-mode-p 'c-mode 'c++-mode)
+                (cppcm-reload-all)
+              )))
+
+;; OPTIONAL, avoid typing full path when starting gdb
+(global-set-key (kbd "C-c C-g")
+                '(lambda ()(interactive) (gud-gdb (concat "gdb --fullname " (cppcm-get-exe-path-current-buffer)))))
+
+;; OPTIONAL, some users need specify extra flags forwarded to compiler
+;;(setq cppcm-extra-preprocss-flags-from-user '("-I/usr/src/linux/include" "-DNDEBUG"))

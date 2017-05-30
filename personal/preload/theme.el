@@ -1,1 +1,1 @@
-(setq prelude-theme 'tango-dark)
+(setq prelude-theme 'base16-default-dark)

@@ -16,7 +16,7 @@
    py-autopep8
    clang-format
    rtags
-   cmake-ide
-   cmake-project
+   cpputils-cmake
+   cmake-mode
    writegood-mode)
 )

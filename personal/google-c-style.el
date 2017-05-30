@@ -149,3 +149,6 @@ Suitable for inclusion in `c-offsets-alist'."
 
 (provide 'google-c-style)
 ;;; google-c-style.el ends here
+
+(require 'google-c-style)
+(add-hook 'c-mode-common-hook 'google-set-c-style)

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Boost Enum
+# key: benum
+# --
+BOOST_SCOPED_ENUM_DECLARE_BEGIN($1) {$0}
+BOOST_SCOPED_ENUM_DECLARE_END($1)

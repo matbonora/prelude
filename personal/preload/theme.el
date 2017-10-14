@@ -1,1 +1,1 @@
-(setq prelude-theme 'base16-default-dark)
+(setq prelude-theme 'blackboard)

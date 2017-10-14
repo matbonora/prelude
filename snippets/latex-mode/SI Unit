@@ -1,0 +1,4 @@
+# key: si
+# name: SI Unit
+# --
+\SI{$1}{$2}$0

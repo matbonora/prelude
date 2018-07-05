@@ -1,6 +1,5 @@
 (prelude-require-packages
  '(project-explorer
-   solarized-theme
    blackboard-theme
    org-pomodoro
    org-projectile
@@ -8,8 +7,8 @@
    ein
    elpy
    company-anaconda
+   leuven-theme
    tangotango-theme
-   base16-theme
    emojify
    langtool
    define-word

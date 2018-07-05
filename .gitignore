@@ -21,7 +21,9 @@ tramp
 /var/pcache
 .emacs.desktop
 .emacs.desktop.lock
-
-
 anaconda-mode
 /request/curl-cookie-jar
+network-security.data
+prelude-cheatsheet.el
+prelude-cheatsheet.aux
+prelude-cheatsheet.log

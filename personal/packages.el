@@ -6,6 +6,8 @@
    org-gnome
    ein
    elpy
+   helm-swoop
+   pdf-tools
    company-anaconda
    leuven-theme
    tangotango-theme

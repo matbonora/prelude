@@ -6,6 +6,8 @@
    org-gnome
    ein
    elpy
+   helm-swoop
+   pdf-tools
    company-anaconda
    leuven-theme
    tangotango-theme
@@ -17,8 +19,10 @@
    py-autopep8
    clang-format
    rtags
+   langtool
    auto-complete-clang
    cpputils-cmake
    cmake-mode
+   auctex-latexmk
    writegood-mode)
 )

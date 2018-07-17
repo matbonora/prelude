@@ -3,12 +3,18 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(TeX-output-view-style
+   (quote
+    (("^pdf$" "." "evince -f %o %(outpage)")
+     ("^html?$" "." "iceweasel %o"))))
+ '(auctex-latexmk-inherit-TeX-PDF-mode (quote T))
  '(custom-safe-themes
    (quote
     ("9a155066ec746201156bb39f7518c1828a73d67742e11271e4f24b7b178c4710" default)))
+ '(global-linum-mode t)
  '(package-selected-packages
    (quote
-    (markdown-mode leuven-theme cmake-mode auto-complete-clang rtags clang-format py-autopep8 define-word langtool emojify base16-theme tangotango-theme company-anaconda elpy ein org-gnome org-projectile org-pomodoro project-explorer cpputils-cmake zop-to-char zenburn-theme writegood-mode which-key volatile-highlights undo-tree smex smartrep smartparens smart-mode-line rainbow-mode rainbow-delimiters projectile ov operate-on-number move-text magit json-mode js2-mode imenu-anywhere ido-ubiquitous guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist geiser flycheck flx-ido expand-region elisp-slime-nav editorconfig easy-kill discover-my-major diminish diff-hl crux company browse-kill-ring blackboard-theme beacon anzu ace-window)))
+    (synosaurus auctex-latexmk counsel swiper alert anaconda-mode async auctex avy company-auctex dash epl f find-file-in-project gh git-commit helm helm-core helm-descbinds helm-projectile highlight-indentation ht ido-completing-read+ ivy magit-popup marshal pythonic pyvenv s simple-httpd websocket with-editor yasnippet markdown-mode leuven-theme cmake-mode auto-complete-clang rtags clang-format py-autopep8 define-word langtool emojify base16-theme tangotango-theme company-anaconda elpy ein org-gnome org-projectile org-pomodoro project-explorer cpputils-cmake zop-to-char zenburn-theme writegood-mode which-key volatile-highlights undo-tree smex smartrep smartparens smart-mode-line rainbow-mode rainbow-delimiters projectile ov operate-on-number move-text magit json-mode js2-mode imenu-anywhere ido-ubiquitous guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist geiser flycheck flx-ido expand-region elisp-slime-nav editorconfig easy-kill discover-my-major diminish diff-hl crux company browse-kill-ring blackboard-theme beacon anzu ace-window)))
  '(vhdl-electric-mode t)
  '(vhdl-stutter-mode t))
 

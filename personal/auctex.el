@@ -7,6 +7,8 @@
 (add-hook 'LaTeX-mode-hook 'flyspell-mode)
 (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
 (add-hook 'LaTeX-mode-hook 'TeX-source-correlate-mode)
+;(add-hook 'LaTeX-mode-hook 'synosaurus-mode)
+(add-hook 'LaTeX-mode-hook 'writegood-mode)
 
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
 (setq reftex-plug-into-AUCTeX t)
@@ -23,3 +25,6 @@
 
 (defun flymake-get-tex-args (file-name)
   (list "pdflatex" (list "-file-line-error" "-draftmode" "-interaction=nonstopmode" file-name)))
+
+(require 'auctex-latexmk)
+(auctex-latexmk-setup)

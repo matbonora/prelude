@@ -11,7 +11,9 @@
    tangotango-theme
    emojify
    langtool
+   auctex-latexmk
    define-word
+   synosaurus
    py-autopep8
    clang-format
    rtags

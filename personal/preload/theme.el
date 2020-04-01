@@ -1,1 +1,1 @@
-(setq prelude-theme 'blackboard)
+(setq prelude-theme 'dracula)

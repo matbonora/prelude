@@ -1,5 +1,6 @@
 (prelude-require-packages
  '(project-explorer
+   dracula-theme
    blackboard-theme
    org-pomodoro
    org-projectile
@@ -13,6 +14,7 @@
    tangotango-theme
    emojify
    langtool
+   monokai-theme
    auctex-latexmk
    define-word
    synosaurus
@@ -24,5 +26,6 @@
    cpputils-cmake
    cmake-mode
    auctex-latexmk
+   yasnippet-snippets
    writegood-mode)
 )
